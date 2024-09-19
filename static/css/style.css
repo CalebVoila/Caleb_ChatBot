@@ -2,9 +2,33 @@ body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   overflow: hidden; /* Prevent scrolling */
+  background-image: url('/static/img/chatbot_background.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed; /* Keeps the background in place while scrolling */
+  width: 100%;
+  height: 100%;
+  margin: 0;
+    padding: 0;
 }
 
-#background-video {
+
+@media (max-width: 768px) {
+  body {
+      background-size: cover;
+      background-position: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  body {
+      background-size: cover;
+      background-position: center;
+  }
+}
+
+/* #background-video {
   position: fixed;
   right: 0;
   bottom: 0;
@@ -12,11 +36,11 @@ body {
   min-height: 100%;
   width: auto;
   height: auto;
-  z-index: -1; /* Ensure the video stays behind the content */
+  z-index: -1; 
   background: no-repeat;
   background-size: cover;
   overflow: hidden;
-}
+} */
 
 
 
